@@ -7,11 +7,11 @@ namespace TelefonRehberi
         static void Main(string[] args)
         {
 
-            PhoneList.PhoneNumberList.Add(new NumberModel("Birkan", "Çakmak", "123"));
-            PhoneList.PhoneNumberList.Add(new NumberModel("Sıla", "Akan", "456"));
-            PhoneList.PhoneNumberList.Add(new NumberModel("Ahmet", "Sayar", "789"));
-            PhoneList.PhoneNumberList.Add(new NumberModel("Büşra", "Kızıl", "123"));
-            PhoneList.PhoneNumberList.Add(new NumberModel("Aslı", "Çakmak", "852"));
+            PhoneListModel.PhoneNumberList.Add(new NumberModel("Birkan", "Çakmak", "123"));
+            PhoneListModel.PhoneNumberList.Add(new NumberModel("Sıla", "Akan", "456"));
+            PhoneListModel.PhoneNumberList.Add(new NumberModel("Ahmet", "Sayar", "789"));
+            PhoneListModel.PhoneNumberList.Add(new NumberModel("Büşra", "Kızıl", "123"));
+            PhoneListModel.PhoneNumberList.Add(new NumberModel("Aslı", "Çakmak", "852"));
 
             Operation.StartPrint();
             int select = int.Parse(Console.ReadLine());

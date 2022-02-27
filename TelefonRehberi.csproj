@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberModel.cs" />
-    <Compile Include="Operation.cs" />
-    <Compile Include="PhoneList.cs" />
+    <Compile Include="Model\NumberModel.cs" />
+    <Compile Include="Controller\Operation.cs" />
+    <Compile Include="Model\PhoneListModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

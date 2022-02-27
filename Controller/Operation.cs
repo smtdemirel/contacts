@@ -38,11 +38,11 @@ namespace TelefonRehberi
         {
             Console.WriteLine("Telefon Rehberi");
             Console.WriteLine("**********************************************");
-            for (int i = 0; i < PhoneList.PhoneNumberList.Count; i++)
+            for (int i = 0; i < PhoneListModel.PhoneNumberList.Count; i++)
             {
-                Console.WriteLine("isim: {0}", PhoneList.PhoneNumberList[i].Name);
-                Console.WriteLine("Soyisim: {0}", PhoneList.PhoneNumberList[i].Surname);
-                Console.WriteLine("Telefon Numarası: {0}", PhoneList.PhoneNumberList[i].Number);
+                Console.WriteLine("isim: {0}", PhoneListModel.PhoneNumberList[i].Name);
+                Console.WriteLine("Soyisim: {0}", PhoneListModel.PhoneNumberList[i].Surname);
+                Console.WriteLine("Telefon Numarası: {0}", PhoneListModel.PhoneNumberList[i].Number);
                 Console.WriteLine("-");
             }
         }
@@ -55,7 +55,7 @@ namespace TelefonRehberi
             string surname = Console.ReadLine();
             Console.WriteLine("Lütfen telefon numarası giriniz :");
             string number = Console.ReadLine();
-            PhoneList.PhoneNumberList.Add(new NumberModel(name, surname, number));
+            PhoneListModel.PhoneNumberList.Add(new NumberModel(name, surname, number));
         }
         //Rehberde Mevcut Olan bir Kullanıcıyı Silen Fonksiyonumuz
         public static void DeleteNumber()
@@ -63,7 +63,7 @@ namespace TelefonRehberi
             Console.WriteLine("Lütfen numarasını silmek istediğiniz kişinin adını ya da soyadını giriniz:");
             int check = 0;
             string name = Console.ReadLine();
-            foreach (var item in PhoneList.PhoneNumberList)
+            foreach (var item in PhoneListModel.PhoneNumberList)
             {
                 if(item.Name.ToLower() == name.ToLower() || item.Surname.ToLower() == name.ToLower())
                 {
@@ -71,8 +71,8 @@ namespace TelefonRehberi
                     char control = char.Parse(Console.ReadLine());
                     if(control == 'y')
                     {
-                        int deleteIndex = PhoneList.PhoneNumberList.IndexOf(item);
-                        PhoneList.PhoneNumberList.RemoveAt(deleteIndex);
+                        int deleteIndex = PhoneListModel.PhoneNumberList.IndexOf(item);
+                        PhoneListModel.PhoneNumberList.RemoveAt(deleteIndex);
                         check++;
                         Console.WriteLine("Silme Onayı Başarılı, Çıkılıyor...");
                         break;
@@ -98,7 +98,7 @@ namespace TelefonRehberi
                     {
                         Console.WriteLine("Lütfen numarasını silmek istediğiniz kişinin adını ya da soyadını giriniz:");
                         name = Console.ReadLine();
-                        foreach (var item2 in PhoneList.PhoneNumberList)
+                        foreach (var item2 in PhoneListModel.PhoneNumberList)
                         {
                             
                             if (item2.Name.ToLower() == name.ToLower() || item2.Surname.ToLower() == name.ToLower())
@@ -107,8 +107,8 @@ namespace TelefonRehberi
                                 char control = char.Parse(Console.ReadLine());
                                 if (control == 'y')
                                 {
-                                    int deleteIndex = PhoneList.PhoneNumberList.IndexOf(item2);
-                                    PhoneList.PhoneNumberList.RemoveAt(deleteIndex);
+                                    int deleteIndex = PhoneListModel.PhoneNumberList.IndexOf(item2);
+                                    PhoneListModel.PhoneNumberList.RemoveAt(deleteIndex);
                                     check++;
                                     selection = 3;
                                     Console.WriteLine("Silme Onayı Başarılı, Çıkılıyor...");
@@ -146,7 +146,7 @@ namespace TelefonRehberi
             {
                 Console.WriteLine("Lütfen arama yapmak istediğiniz kişinin adını ya da soyadını giriniz:");
                 string name = Console.ReadLine();
-                foreach (var item in PhoneList.PhoneNumberList)
+                foreach (var item in PhoneListModel.PhoneNumberList)
                 {
                     if (item.Name.ToLower() == name.ToLower() || item.Surname.ToLower() == name.ToLower())
                     {
@@ -162,7 +162,7 @@ namespace TelefonRehberi
             {
                 Console.WriteLine("Lütfen arama yapmak istediğiniz kişinin telefon numarasını giriniz:");
                 string no = Console.ReadLine();
-                foreach (var item in PhoneList.PhoneNumberList)
+                foreach (var item in PhoneListModel.PhoneNumberList)
                 {
                     if (item.Number == no)
                     {
@@ -186,17 +186,17 @@ namespace TelefonRehberi
         {
             Console.WriteLine("Lütfen numarasını güncellemek istediğiniz kişinin adını ya da soyadını giriniz:");
             string name = Console.ReadLine();
-            int count = PhoneList.PhoneNumberList.Count;
+            int count = PhoneListModel.PhoneNumberList.Count;
             int updateControl = 0;
             //Foreach Kullanamıyoruz, çünkü hangi indeks de iş yapıyorsak orayı bilmemiz lazım, çünkü güncelleme yapacağız :).
             for (var i = 0; i < count; i++)
             {
-                if(PhoneList.PhoneNumberList[i].Name.ToLower() == name.ToLower() || PhoneList.PhoneNumberList[i].Surname.ToLower() == name.ToLower())
+                if(PhoneListModel.PhoneNumberList[i].Name.ToLower() == name.ToLower() || PhoneListModel.PhoneNumberList[i].Surname.ToLower() == name.ToLower())
                 {
-                    Console.WriteLine("Kişi Bulundu ve Telefon Numarası: {0}",PhoneList.PhoneNumberList[i].Number);
+                    Console.WriteLine("Kişi Bulundu ve Telefon Numarası: {0}",PhoneListModel.PhoneNumberList[i].Number);
                     Console.WriteLine("Lütfen güncellemek istediğiniz telefon numarasını giriniz...");
                     string newNumber = Console.ReadLine();
-                    PhoneList.PhoneNumberList[i].Number = newNumber;
+                    PhoneListModel.PhoneNumberList[i].Number = newNumber;
                     Console.WriteLine("Telefon Numarası Güncellemesi Başarılı, Çıkılıyor...");
                     updateControl++;
                     break;

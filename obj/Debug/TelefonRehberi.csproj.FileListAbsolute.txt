@@ -6,3 +6,11 @@ C:\Users\smtde\Desktop\.net\net-projeler\class\TelefonRehberi\obj\Debug\TelefonR
 C:\Users\smtde\Desktop\.net\net-projeler\class\TelefonRehberi\obj\Debug\TelefonRehberi.csproj.CoreCompileInputs.cache
 C:\Users\smtde\Desktop\.net\net-projeler\class\TelefonRehberi\obj\Debug\TelefonRehberi.exe
 C:\Users\smtde\Desktop\.net\net-projeler\class\TelefonRehberi\obj\Debug\TelefonRehberi.pdb
+C:\Users\smtde\Desktop\.net\contacts\bin\Debug\TelefonRehberi.exe.config
+C:\Users\smtde\Desktop\.net\contacts\bin\Debug\TelefonRehberi.exe
+C:\Users\smtde\Desktop\.net\contacts\bin\Debug\TelefonRehberi.pdb
+C:\Users\smtde\Desktop\.net\contacts\obj\Debug\TelefonRehberi.csproj.AssemblyReference.cache
+C:\Users\smtde\Desktop\.net\contacts\obj\Debug\TelefonRehberi.csproj.SuggestedBindingRedirects.cache
+C:\Users\smtde\Desktop\.net\contacts\obj\Debug\TelefonRehberi.csproj.CoreCompileInputs.cache
+C:\Users\smtde\Desktop\.net\contacts\obj\Debug\TelefonRehberi.exe
+C:\Users\smtde\Desktop\.net\contacts\obj\Debug\TelefonRehberi.pdb
