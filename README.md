@@ -6,4 +6,4 @@
 <h3>4) Kart Taşı</h3>
 <h3>5) Board Listeleme</h3>
 
-<img>https://user-images.githubusercontent.com/47919717/155897632-6110c37f-5935-48be-b25e-6ecfe7844cd2.PNG</img>
+![start](https://user-images.githubusercontent.com/47919717/155897632-6110c37f-5935-48be-b25e-6ecfe7844cd2.PNG)
