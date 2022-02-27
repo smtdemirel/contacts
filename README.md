@@ -9,5 +9,5 @@
 ![start](https://user-images.githubusercontent.com/47919717/155897632-6110c37f-5935-48be-b25e-6ecfe7844cd2.PNG)
 
 <h3>1) Kart Ekle</h3>
-![add-card](https://user-images.githubusercontent.com/47919717/155897772-0c5388de-092b-4c93-8649-74adcef1bdd3.PNG)
+![add-card](https://user-images.githubusercontent.com/47919717/155897772-0c5388de-092b-4c93-8649-74adcef1bdd3.png)
 
